@@ -1,0 +1,9 @@
+go 1.21.1
+
+use (
+	./Array_Deletion
+	./Array_Insertion
+	./Array_Traversal
+	./Binary_Search
+	./Linear_Search
+)
