@@ -6,4 +6,13 @@ use (
 	./Array_Traversal
 	./Binary_Search
 	./Linear_Search
+	./Recursion_BinarySearch
+	./Recursion_Factorial
+	./Recursion_Fibanocci
+	./Singly_LinkedList_Deletion
+	./Singly_LinkedList_Insertion
+	./Singly_LinkedList_Traversal
+	./String_Capital
+	./String_Increment_Letters
+	./String_LowerCase
 )
