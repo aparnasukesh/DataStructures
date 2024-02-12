@@ -9,10 +9,16 @@ use (
 	./Recursion_BinarySearch
 	./Recursion_Factorial
 	./Recursion_Fibanocci
+	./Recursion_String_Reverse
+	./Recursion_String_Reverse_01
 	./Singly_LinkedList_Deletion
 	./Singly_LinkedList_Insertion
 	./Singly_LinkedList_Traversal
 	./String_Capital
+	./String_Comparison
+	./String_Contains
 	./String_Increment_Letters
 	./String_LowerCase
+	./String_Reverse
+	./String_SubString
 )
