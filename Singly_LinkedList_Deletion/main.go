@@ -61,7 +61,26 @@ func (l *LinkedList) DeleteEnd() {
 
 // Delete from specific position
 func (l *LinkedList) DeleteAtPosition(position int) {
+	current := l.Head
+	var prev *Node
+	if l.Head == nil {
+		return
+	}
+	if l.Head.Next == nil {
+		l.Head = nil
+		return
+	}
 
+	for i := 1; i < position; i++ {
+		prev = current
+		current = current.Next
+	}
+	if current == nil {
+		fmt.Println("invalid position")
+		return
+	}
+	prev.Next = current.Next
+	current.Next = nil
 }
 
 func main() {
@@ -74,7 +93,16 @@ func main() {
 	linkedList.Append(8)
 	linkedList.Traversal()
 
-	linkedList.DeleteEnd()
+	linkedList.DeleteAtPosition(4)
+	linkedList.Traversal()
+	linkedList.DeleteAtPosition(4)
+	linkedList.Traversal()
+	linkedList.DeleteAtPosition(2)
+	linkedList.Traversal()
+
+	linkedList.DeleteAtPosition(2)
+	linkedList.Traversal()
+	linkedList.DeleteAtPosition(1)
 	linkedList.Traversal()
 
 	linkedList.DeleteFirst()
