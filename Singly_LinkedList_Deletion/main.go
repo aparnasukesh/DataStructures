@@ -3,71 +3,90 @@ package main
 import "fmt"
 
 type Node struct {
-	data int
-	next *Node
+	Data int
+	Next *Node
 }
-
 type LinkedList struct {
-	head *Node
+	Head *Node
 }
 
-func (ll *LinkedList) Insert(data int) {
-	newNode := &Node{data, nil}
-	if ll.head == nil {
-		ll.head = newNode
+func (l *LinkedList) Append(data int) {
+	newNode := &Node{Data: data, Next: nil}
+	if l.Head == nil {
+		l.Head = newNode
 		return
 	}
-
-	current := ll.head
-	for current.next != nil {
-		current = current.next
+	current := l.Head
+	for current.Next != nil {
+		current = current.Next
 	}
-	current.next = newNode
+	current.Next = newNode
 }
 
-func (ll *LinkedList) Print() {
-	current := ll.head
+func (l *LinkedList) Traversal() {
+	current := l.Head
 	for current != nil {
-		fmt.Print(current.data, " ")
-		current = current.next
+		fmt.Printf("%d ->", current.Data)
+		current = current.Next
 	}
-	fmt.Println()
+	fmt.Println(nil)
 }
 
-func (ll *LinkedList) Delete(data int) {
-	if ll.head == nil {
+// Delete a node from the beginning
+func (l *LinkedList) DeleteFirst() {
+	if l.Head == nil {
+		fmt.Println("Linked list is empty")
 		return
 	}
+	current := l.Head
+	l.Head = l.Head.Next
+	current.Next = nil
 
-	if ll.head.data == data {
-		ll.head = ll.head.next
+}
+
+// Delete a Node From the End
+func (l *LinkedList) DeleteEnd() {
+	if l.Head.Next == nil {
+		l.Head = nil
+		fmt.Println("Linked list is empty")
 		return
 	}
-
-	current := ll.head
-	for current.next != nil && current.next.data != data {
-		current = current.next
+	current := l.Head
+	for current.Next.Next != nil {
+		current = current.Next
 	}
+	current.Next = nil
 
-	if current.next == nil {
-		return
-	}
+}
 
-	current.next = current.next.next
+// Delete from specific position
+func (l *LinkedList) DeleteAtPosition(position int) {
+
 }
 
 func main() {
-	myLinkedList := LinkedList{}
+	linkedList := &LinkedList{}
 
-	myLinkedList.Insert(1)
-	myLinkedList.Insert(2)
-	myLinkedList.Insert(3)
+	linkedList.Append(2)
+	linkedList.Append(3)
+	linkedList.Append(5)
+	linkedList.Append(4)
+	linkedList.Append(8)
+	linkedList.Traversal()
 
-	fmt.Println("Linked List before Deletion:")
-	myLinkedList.Print()
+	linkedList.DeleteEnd()
+	linkedList.Traversal()
 
-	myLinkedList.Delete(2)
+	linkedList.DeleteFirst()
+	linkedList.Traversal()
 
-	fmt.Println("Linked List after Deletion:")
-	myLinkedList.Print()
+	linkedList.DeleteFirst()
+	linkedList.Traversal()
+
+	linkedList.DeleteEnd()
+	linkedList.Traversal()
+
+	linkedList.DeleteEnd()
+	linkedList.Traversal()
+
 }

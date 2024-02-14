@@ -3,43 +3,45 @@ package main
 import "fmt"
 
 type Node struct {
-	data int
-	next *Node
+	Data int
+	Next *Node
 }
 
 type LinkedList struct {
-	head *Node
+	Head *Node
 }
 
-func (ll *LinkedList) Append(data int) {
-	newNode := &Node{data, nil}
-	if ll.head == nil {
-		ll.head = newNode
+// element added at the end of linkedlist
+func (l *LinkedList) Append(data int) {
+	newNode := &Node{Data: data, Next: nil}
+
+	if l.Head == nil {
+		l.Head = newNode
 		return
 	}
 
-	current := ll.head
-	for current.next != nil {
-		current = current.next
+	current := l.Head
+	for current.Next != nil {
+		current = current.Next
 	}
-	current.next = newNode
+	current.Next = newNode
+
 }
 
-func (ll *LinkedList) Print() {
-	current := ll.head
+func (l *LinkedList) Traverse() {
+	current := l.Head
 	for current != nil {
-		fmt.Print(current.data, " ")
-		current = current.next
+		fmt.Printf("%d ->", current.Data)
+		current = current.Next
 	}
-	fmt.Println()
+	fmt.Println("nil")
 }
 
 func main() {
-	myLinkedList := LinkedList{}
+	linkedList := LinkedList{}
+	linkedList.Append(1)
+	linkedList.Append(2)
+	linkedList.Append(3)
 
-	myLinkedList.Append(1)
-	myLinkedList.Append(2)
-	myLinkedList.Append(3)
-
-	myLinkedList.Print()
+	linkedList.Traverse()
 }
