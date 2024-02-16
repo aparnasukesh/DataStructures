@@ -52,6 +52,7 @@ func (l *LinkedList) SpecificPosition(position int) {
 	fmt.Printf("Data at Position %d is %d", position, current.Data)
 }
 
+// Search an elemnet is present or not
 func (l *LinkedList) SearchElement(data int) {
 	current := l.Head
 	flag := 0

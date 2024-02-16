@@ -4,14 +4,19 @@ use (
 	./Array_Deletion
 	./Array_Insertion
 	./Array_Remove_Duplicates
+	./Array_Second_Largest
+	./Array_Second_Smallest
 	./Array_Traversal
 	./Binary_Search
+	./Doubly_LinkedList_Traversal
 	./Linear_Search
 	./Recursion_BinarySearch
 	./Recursion_Factorial
 	./Recursion_Fibanocci
 	./Recursion_String_Reverse
 	./Recursion_String_Reverse_01
+	./Recursion_String_Reverse_At_Position
+	./Singly_LinkedList_Bubble_Sort
 	./Singly_LinkedList_Deletion
 	./Singly_LinkedList_Insertion
 	./Singly_LinkedList_MiddleElement
