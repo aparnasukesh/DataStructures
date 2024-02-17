@@ -6,6 +6,7 @@ use (
 	./Array_Remove_Duplicates
 	./Array_Second_Largest
 	./Array_Second_Smallest
+	./Array_To_LinkedList
 	./Array_Traversal
 	./Binary_Search
 	./Doubly_LinkedList_Bubble_Sort
@@ -14,6 +15,8 @@ use (
 	./Doubly_LinkedList_Reverse
 	./Doubly_LinkedList_Traversal
 	./Linear_Search
+	./LinkedList_Remove_Duplicates
+	./LinkedList_To_Array
 	./Recursion_BinarySearch
 	./Recursion_Factorial
 	./Recursion_Fibanocci
