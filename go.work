@@ -8,6 +8,10 @@ use (
 	./Array_Second_Smallest
 	./Array_Traversal
 	./Binary_Search
+	./Doubly_LinkedList_Bubble_Sort
+	./Doubly_LinkedList_Deletion
+	./Doubly_LinkedList_MiddleElement
+	./Doubly_LinkedList_Reverse
 	./Doubly_LinkedList_Traversal
 	./Linear_Search
 	./Recursion_BinarySearch
