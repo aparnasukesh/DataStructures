@@ -9,20 +9,24 @@ use (
 	./Array_To_LinkedList
 	./Array_Traversal
 	./Binary_Search
+	./Bubble_Sort
 	./Doubly_LinkedList_Bubble_Sort
 	./Doubly_LinkedList_Deletion
 	./Doubly_LinkedList_MiddleElement
 	./Doubly_LinkedList_Reverse
 	./Doubly_LinkedList_Traversal
+	./Insertion_Sort
 	./Linear_Search
 	./LinkedList_Remove_Duplicates
 	./LinkedList_To_Array
+	./Quick_Sort
 	./Recursion_BinarySearch
 	./Recursion_Factorial
 	./Recursion_Fibanocci
 	./Recursion_String_Reverse
 	./Recursion_String_Reverse_01
 	./Recursion_String_Reverse_At_Position
+	./Selection_Sort
 	./Singly_LinkedList_Bubble_Sort
 	./Singly_LinkedList_Deletion
 	./Singly_LinkedList_Insertion
