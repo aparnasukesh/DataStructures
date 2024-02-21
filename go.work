@@ -19,7 +19,10 @@ use (
 	./Linear_Search
 	./LinkedList_Remove_Duplicates
 	./LinkedList_To_Array
-	./Quick_Sort
+	./Merge_Sort
+	./Quick_Sort_01
+	./Quick_Sort_02
+	./Quick_Sort_03
 	./Recursion_BinarySearch
 	./Recursion_Factorial
 	./Recursion_Fibanocci

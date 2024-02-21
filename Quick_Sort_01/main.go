@@ -65,16 +65,16 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func Quicksort(arr []int) []int {
+func quickSort(arr []int) []int {
 	if len(arr) <= 1 {
 		return arr
 	}
-
 	pivot := arr[0]
 	var left, right []int
-
 	for i := 1; i < len(arr); i++ {
 		if arr[i] < pivot {
 			left = append(left, arr[i])
@@ -82,12 +82,11 @@ func Quicksort(arr []int) []int {
 			right = append(right, arr[i])
 		}
 	}
-
-	return append(append(Quicksort(left), pivot), Quicksort(right)...)
+	return append(append(quickSort(left), pivot), quickSort(right)...)
 }
-
 func main() {
 	arr := []int{7, 6, 10, 5, 9, 2, 1, 15, 7}
-	result := Quicksort(arr)
-	fmt.Println(result)
+	fmt.Println("Array:", arr)
+	res := quickSort(arr)
+	fmt.Println("Sorted Array:", res)
 }
