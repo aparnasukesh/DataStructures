@@ -37,6 +37,7 @@ use (
 	./Singly_LinkedList_Reverse
 	./Singly_LinkedList_Traversal
 	./Stack_Usig_Array
+	./Stack_Using_LinkedList
 	./String_Capital
 	./String_Comparison
 	./String_Contains
