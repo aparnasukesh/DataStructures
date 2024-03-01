@@ -20,6 +20,7 @@ use (
 	./LinkedList_Remove_Duplicates
 	./LinkedList_To_Array
 	./Merge_Sort
+	./Queue_Using_LinkedList
 	./Quick_Sort_01
 	./Quick_Sort_02
 	./Quick_Sort_03
@@ -46,4 +47,5 @@ use (
 	./String_Reverse
 	./String_SubString
 	./String_SubString_Count
+	./Tree_Binary
 )
