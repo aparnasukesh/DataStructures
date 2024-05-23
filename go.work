@@ -15,6 +15,7 @@ use (
 	./Doubly_LinkedList_MiddleElement
 	./Doubly_LinkedList_Reverse
 	./Doubly_LinkedList_Traversal
+	./Fibanocci_Series
 	./Insertion_Sort
 	./Linear_Search
 	./LinkedList_Remove_Duplicates
