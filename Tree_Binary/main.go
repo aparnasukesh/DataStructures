@@ -12,17 +12,18 @@ func NewNode(value int) *TreeNode {
 	return &TreeNode{Value: value, Left: nil, Right: nil}
 }
 
-func (node *TreeNode) Insert(val int, insertLeft bool) *TreeNode {
-	if node == nil {
-		return NewNode(val)
+func (n *TreeNode) Insert(data int) *TreeNode {
+	if n == nil {
+		return NewNode(data)
 	}
 
-	if insertLeft {
-		node.Left = node.Left.Insert(val, !insertLeft)
-	} else {
-		node.Right = node.Right.Insert(val, !insertLeft)
+	if data < n.Data {
+		n.Left = n.Left.Insert(data)
+	} else if data > n.Data {
+		n.Right = n.Right.Insert(data)
 	}
-	return node
+
+	return n
 }
 
 func (node *TreeNode) InOrderTraversal() {
