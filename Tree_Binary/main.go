@@ -17,9 +17,9 @@ func (n *TreeNode) Insert(data int) *TreeNode {
 		return NewNode(data)
 	}
 
-	if data < n.Data {
+	if data < n.Value {
 		n.Left = n.Left.Insert(data)
-	} else if data > n.Data {
+	} else if data > n.Value {
 		n.Right = n.Right.Insert(data)
 	}
 
@@ -41,13 +41,13 @@ func (node *TreeNode) GetRootNode() *TreeNode {
 func main() {
 
 	var root *TreeNode
-	root = root.Insert(10, true)
-	root.Insert(5, false)
-	root.Insert(15, true)
-	root.Insert(3, false)
-	root.Insert(7, true)
-	root.Insert(12, false)
-	root.Insert(18, true)
+	root = root.Insert(10)
+	root.Insert(5)
+	root.Insert(15)
+	root.Insert(3)
+	root.Insert(7)
+	root.Insert(12)
+	root.Insert(18)
 
 	rootNode := root.GetRootNode()
 	fmt.Println("Root Node :", rootNode.Value)
