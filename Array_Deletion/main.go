@@ -17,4 +17,5 @@ func main() {
 	} else {
 		fmt.Println("Invalid position")
 	}
+
 }

@@ -8,6 +8,7 @@ func main() {
 
 	fmt.Println("Original Array:", originalArray)
 	fmt.Println("Array without Duplicates:", uniqueArray)
+
 }
 
 func removeDuplicates(arr []int) []int {
