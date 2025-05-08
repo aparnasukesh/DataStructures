@@ -63,4 +63,6 @@ func main() {
 	queue.Enqueue(4)
 	queue.Enqueue(5)
 
+	queue.Traversal()
+
 }

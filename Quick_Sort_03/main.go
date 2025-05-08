@@ -25,5 +25,4 @@ func quickSort(arr []int) []int {
 		}
 	}
 	return append(append(quickSort(left), pivot), quickSort(right)...)
-
 }

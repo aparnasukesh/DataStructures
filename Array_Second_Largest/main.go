@@ -16,7 +16,6 @@ func main() {
 			secondLarge = large
 			large = arr[i]
 		} else if arr[i] > secondLarge && arr[i] < large {
-
 			secondLarge = arr[i]
 		}
 	}

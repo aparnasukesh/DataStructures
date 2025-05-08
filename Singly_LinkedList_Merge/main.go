@@ -45,6 +45,7 @@ func mergeTwoLists(list1, list2 *ListNode) *ListNode {
 			tail.Next = newNode
 			tail = newNode
 		}
+
 	}
 
 	for current1 != nil {
@@ -85,8 +86,7 @@ func printLinkedList(head *ListNode) {
 }
 func main() {
 	list1 := createLinkedList([]int{1, 3, 5})
-	list2 := createLinkedList([]int{2, 4, 6})
-
+	list2 := createLinkedList([]int{2, 4, 6, 8, 7})
 	printLinkedList(list1)
 	fmt.Println()
 	printLinkedList(list2)
