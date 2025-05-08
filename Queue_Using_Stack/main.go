@@ -26,6 +26,7 @@ func (s *Stack) Pop() (int, error) {
 	return item, nil
 
 }
+
 func (s *Stack) IsEmpty() bool {
 	return len(s.items) == 0
 }

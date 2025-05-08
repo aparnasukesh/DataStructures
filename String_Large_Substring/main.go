@@ -31,7 +31,7 @@ func subString(str string) string {
 	if substr != "" {
 		sub = append(sub, substr)
 	}
-
+	fmt.Println("sub: ", sub)
 	// Find the largest substring
 	maxlen := len(sub[0])
 	ansStr := sub[0]
@@ -53,5 +53,6 @@ func subString(str string) string {
 		}
 	}
 
+	fmt.Println("result: ", result)
 	return result
 }
