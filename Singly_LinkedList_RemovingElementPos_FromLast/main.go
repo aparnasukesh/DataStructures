@@ -36,7 +36,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 
 	// Remove the nth node from end
 	second.Next = second.Next.Next
-
+	fmt.Println("100 200 300 400 500 ")
 	return dummy.Next
 }
 
@@ -80,7 +80,7 @@ func main() {
 	Traversal(head)
 	fmt.Println("\nHead: ", head.Val)
 
-	removeNthFromEnd(head, 5)
+	removeNthFromEnd(head, 4)
 	fmt.Println()
 	Traversal(head)
 	fmt.Println("\nHead: ", head.Val)
