@@ -1,0 +1,3 @@
+module remove_adjacent_small_and_capital_letter_of_same_character
+
+go 1.21.1
