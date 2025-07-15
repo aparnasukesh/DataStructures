@@ -12,6 +12,7 @@ func main() {
 	byt := []byte(name)
 	for i := 0; i < len(byt); i++ {
 		value := byt[i] + newKey
+		fmt.Println("value: ", value)
 		if value <= 122 {
 			byt[i] = value
 		} else {
