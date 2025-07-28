@@ -16,9 +16,9 @@ func main() {
 	s1 := "s"
 	//Output: "s"
 
-	fmt.Println(makeGood(s))
-	fmt.Println(makeGood(s0))
-	fmt.Println(makeGood(s1))
+	fmt.Println("example 1:", makeGood(s))
+	fmt.Println("example 2: ", makeGood(s0))
+	fmt.Println("example 3: ", makeGood(s1))
 
 }
 func makeGood(s string) string {

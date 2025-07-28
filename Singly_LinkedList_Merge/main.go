@@ -73,6 +73,7 @@ func mergeTwoLists(list1, list2 *ListNode) *ListNode {
 	}
 	return list
 }
+
 func printLinkedList(head *ListNode) {
 	current := head
 
