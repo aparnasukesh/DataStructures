@@ -22,7 +22,6 @@ func (s *Stack) Pop() (int, error) {
 	}
 	item := s.items[len(s.items)-1]
 	s.items = s.items[:len(s.items)-1]
-
 	return item, nil
 
 }

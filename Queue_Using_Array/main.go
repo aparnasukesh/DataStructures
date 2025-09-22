@@ -65,5 +65,4 @@ func main() {
 		fmt.Println("Front:", item)
 	}
 	queue.Traversal()
-
 }

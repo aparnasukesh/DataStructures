@@ -12,7 +12,6 @@ func main() {
 
 func subsets(nums []int) [][]int {
 	result := [][]int{{}} // start with an empty subset
-
 	for _, num := range nums {
 		newSubsets := [][]int{}
 		for _, subset := range result {
