@@ -79,7 +79,6 @@ func main() {
 	Append(head, 400)
 	Traversal(head)
 	fmt.Println("\nHead: ", head.Val)
-
 	removeNthFromEnd(head, 4)
 	fmt.Println()
 	Traversal(head)
